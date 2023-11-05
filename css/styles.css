@@ -285,7 +285,7 @@ body {
 
 .service-input {
     padding: 12px 40px;
-    border: 1px solid #2E2F42;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     transition: 250ms;
     transition-property: color, border-color, background-color;
@@ -310,14 +310,57 @@ body {
 }
 
 .service-input-textarea {
-    border: 1px solid #2E2F42;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     transition: 250ms;
     transition-property: color, border-color, background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding: 8px 16px;
+    margin-bottom: 8px;
 }
 
+.service-agree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.policy-text {
+    color: var(--LIGHT-SLATE);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 116.667%;
+    letter-spacing: 0.48px;
+    margin-left: 8px;
+    margin-top: 3px;
+}
+
+.agree-policy {
+    color: var(--IRIS);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.48px;
+    text-decoration-line: underline;
+}
+
+.agree-checkbox {
+    /* appearance: none; */
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 6px;
+}
+
+.agree-check-icon {
+    fill: none;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px; 
+    transition: 250ms;
+    transition-property: border-color, background-color, fill;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .is-hidden {
     pointer-events: none;
     opacity: 0;
