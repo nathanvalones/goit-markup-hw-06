@@ -347,6 +347,7 @@ body {
 
 .agree-checkbox {
     /* appearance: none; */
+    border: 0.25px solid rgba(46, 47, 66, 0.08);
     width: 17px;
     height: 17px;
     position: absolute;
@@ -355,8 +356,8 @@ body {
 
 .agree-check-icon {
     fill: none;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px; 
+    border: 0.25px solid rgba(46, 47, 66, 0.08);
+    border-radius: 4px; 
     transition: 250ms;
     transition-property: border-color, background-color, fill;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
