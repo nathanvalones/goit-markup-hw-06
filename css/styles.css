@@ -227,6 +227,7 @@ body {
     width: 408px;
     height: 584px;
     border-radius: 4px;
+    position: relative;
 }
 
 .modal-close-btn {
@@ -236,9 +237,21 @@ body {
     background-color: var(--CORNFLOWER);
     width: 24px;
     height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.pop-up {
+    position: absolute;
+    top: 48px; 
+    left: 35px;
+}
+
+.pop-text {
+    color: var(--NAVY-BLUE);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.32px;
 }
 
 .modal-close-btn:hover {
