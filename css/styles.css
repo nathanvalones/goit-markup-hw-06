@@ -377,7 +377,7 @@ body {
 
 .service-agree .agree-checkbox:focus + .agree-check-icon,
 .service-agree .agree-checkbox:checked:focus + .agree-check-icon {
-    outline: 2px solid #212121;
+    outline: 2px solid var(--IRIS);
 }
 
 .service-agree .agree-checkbox:checked + .agree-check-icon {
