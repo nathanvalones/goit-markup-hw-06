@@ -791,6 +791,7 @@ body {
     height: 40px;
     width: 264px;
     border-radius: 4px;
+    margin-right: 24px;
 } 
 
 .input-sub::placeholder {
@@ -800,7 +801,6 @@ body {
     line-height: 200%;
     letter-spacing: 0.48px;
     padding-left: 16px;
-    margin-right: 24px;
 }
 
 .btn-sub {
