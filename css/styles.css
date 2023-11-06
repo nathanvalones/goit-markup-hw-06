@@ -787,6 +787,7 @@ body {
 
 .input-sub {
     outline: 2px solid var(--WHITE);
+    color: var(--WHITE);
     background: none;
     height: 40px;
     width: 264px;
