@@ -305,6 +305,17 @@ body {
     fill: var(--IRIS);
 }
 
+.service-input:focus  {
+    outline: none;
+    border: 1px solid var(--IRIS);
+}
+
+.service-input-textarea:focus,
+.service-input-textarea:hover {
+    outline: none;
+    border: 1px solid var(--IRIS);
+}
+
 .service-input:hover {
     border: 1px solid var(--IRIS);
 }
@@ -324,6 +335,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-bottom: 24px;
 }
 
 .policy-text {
@@ -346,22 +358,54 @@ body {
 }
 
 .agree-checkbox {
-    /* appearance: none; */
     border: 0.25px solid rgba(46, 47, 66, 0.08);
-    width: 17px;
-    height: 17px;
+    width: 18px;
+    height: 18px;
     position: absolute;
     left: 6px;
+    opacity: 0;
 }
 
 .agree-check-icon {
     fill: none;
-    border: 0.25px solid rgba(46, 47, 66, 0.08);
+    border: 1px solid rgba(46, 47, 66, 0.5);
     border-radius: 4px; 
     transition: 250ms;
     transition-property: border-color, background-color, fill;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.service-agree .agree-checkbox:focus + .agree-check-icon,
+.service-agree .agree-checkbox:checked:focus + .agree-check-icon {
+    outline: 2px solid #212121;
+}
+
+.service-agree .agree-checkbox:checked + .agree-check-icon {
+    background-color: var(--IRIS);
+    border-color: var(--IRIS);
+    fill: var(--WHITE);
+    outline: none;
+    stroke: var(--WHITE);
+    stroke-width: 0.2;
+}
+
+.modal-send {
+    padding: 16px 64px;
+    background-color: var(--IRIS);
+    color: var(--WHITE);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.64px;
+    border-color: transparent;
+}
+
+.modal-send:hover {
+    cursor: pointer;
+}
+
 .is-hidden {
     pointer-events: none;
     opacity: 0;
@@ -731,6 +775,52 @@ body {
 
 .subscribe {
     margin-left: 80px;
+}
+
+.footer-subscribe-text {
+    color: var(--WHITE);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.32px;
+}
+
+.input-sub {
+    outline: 2px solid var(--WHITE);
+    background: none;
+    height: 40px;
+    width: 264px;
+    border-radius: 4px;
+} 
+
+.input-sub::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 200%;
+    letter-spacing: 0.48px;
+    padding-left: 16px;
+    margin-right: 24px;
+}
+
+.btn-sub {
+    color: var(--WHITE);
+    padding: 12px 24px;
+    background-color: var(--IRIS);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.64px;
+}
+
+.btn-sub svg {
+    fill: var(--WHITE);
 }
 
 
